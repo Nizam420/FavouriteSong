@@ -1,13 +1,99 @@
-body {
+body{
+  background-color: aquamarine;
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+} 
+
+.heading_style{
+  padding: 30px 0;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #eb6383;
+  background-color: rgb(2, 8, 12);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cards{
+  width: 100%;
+  height: auto;
+}
+
+.card{
+  padding: auto;
+  margin: 5%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: aliceblue;
+  width: 21.25%;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgb(5, 5, 5);
+  float: left;
+  text-align: center;
+}
+
+.card:hover{
+  box-shadow: 0px 13px 10px -7px rgb(5, 5, 5);
+  transform: scale(1.05, 1.05);
+}
+
+.card_img{
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+}
+
+.card_info{
+  background-color: beige;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+  background-color: slateblue;
+}
+
+.card_category{
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color: beige;
+}
+
+.card_title{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: beige;
+  text-transform: capitalize;
+}
+
+button{
+  padding: 5px 8px;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #271d25;
+  background-color: rgb(204, 202, 212);
+  outline: none;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+@media(max-width: 786px){
+  .card{
+    float: none;
+    margin: 5%;
+    width: 90%;
+  }
 }
